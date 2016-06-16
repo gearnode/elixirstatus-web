@@ -6,5 +6,7 @@ otp_release:
   - 18.2.1
 services:
   - mysql
+env:
+  - MYSQL_TEST_DB_USERNAME=travis
 before_script:
   - mysql -e "create database IF NOT EXISTS test;" -uroot

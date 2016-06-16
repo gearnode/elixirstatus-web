@@ -8,5 +8,6 @@ services:
   - mysql
 env:
   - MYSQL_TEST_DB_USERNAME=travis
+  - MYSQL_TEST_DB_PASSWORD=""
 before_script:
   - mysql -e "create database IF NOT EXISTS test;" -uroot

@@ -1,0 +1,11 @@
+sudo: false
+language: elixir
+elixir:
+  1.0
+  2.0
+  2.1
+services:
+  - mysql
+
+before_script:
+  - mysql -e 'mysql -e "create database IF NOT EXISTS test;" -uroot'

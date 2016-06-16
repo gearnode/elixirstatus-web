@@ -6,7 +6,7 @@ otp_release:
   - 18.2.1
 services:
   - mysql
-env:
+global:
   - MYSQL_TEST_DB_USERNAME=travis
   - MYSQL_TEST_DB_PASSWORD=password
 before_script:
